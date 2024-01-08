@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+      
+      body{
+        background-image: url(./calendar-background.jpg);
+        background-size: cover;
+          height:250vh;
+        }
+       .calender{
+        position: relative;
+        display: flex;
+        justify-content: center;
+       }
+        .firstmonth{
+            font-size: larger;
+        }
+        .day1{
+            background-color: seagreen;
+            word-spacing: 8px;
+        }
+         .w1{
+         word-spacing: 34px;
+         font-size: large;
+        }
+        .w2{
+            word-spacing: 27px;
+            font-size: large;
+        }
+        .w3,.w4,.w5{
+            word-spacing: 24px;
+            font-size: large;
+        }
+        .janweek{
+            position: relative;
+            top:1vh;
+        }
+        .febweek{
+            position: absolute;
+            top:1vh;
+            left:134vh;
+        }
+        .secondmonth{
+            font-size: larger;          
+        }
+        .day2{
+            background-color: slateblue;
+            word-spacing: 8px;
+        }
+         .w6{
+         word-spacing: 36px;
+         font-size: large;
+        }
+        .w7{
+            word-spacing: 32px;
+            font-size: large;
+        }
+        .w8,.w9,.w10{
+            word-spacing: 24px;
+            font-size: large;
+
+        }
+        .marweek{
+            position: absolute;
+            top:40vh;
+            left:83vh;
+        }
+        .thirdmonth{
+            font-size: larger;          
+        }
+        .day3{
+            background-color: darkturquoise;
+            word-spacing: 8px;
+        }
+         .w11{
+         word-spacing: 45px;
+         font-size: large;
+        }
+        .w12{
+            word-spacing: 34px;
+            font-size: large;
+        }
+        .w13,.w14,.w15{
+            word-spacing: 26px;
+            font-size: large;
+        }
+        .aprweek{
+            position: absolute;
+            top:40vh;
+            left:134vh;
+        }
+        .fourthmonth{
+            font-size: larger;          
+        }
+        .day4{
+            background-color: palevioletred;
+            word-spacing: 8px;
+        }
+         .w16{
+         word-spacing: 34px;
+         font-size: large;
+        }
+        .w17{
+            word-spacing: 28px;
+            font-size: large;
+        }
+        .w18,.w19,.w20{
+            word-spacing: 26px;
+            font-size: large;
+        }
+        .mayweek{
+            position: absolute;
+            top:80vh;
+            left:83vh;
+        }
+        .fifthmonth{
+            font-size: larger;          
+        }
+        .day5{
+            background-color: blue;
+            word-spacing: 8px;
+        }
+         .w21{
+         word-spacing: 36px;
+         font-size: large;
+        }
+        .w22{
+            word-spacing: 30px;
+            font-size: large;
+        }
+        .w23,.w24,.w25{
+            word-spacing: 24px;
+            font-size: large;
+        }
+        .juneweek{
+            position: absolute;
+            top:80vh;
+            left:134vh;
+        }
+        .sixthmonth{
+            font-size: larger;          
+        }
+        .day6{
+            background-color: brown;
+            word-spacing: 8px;
+        }
+         .w26{
+         word-spacing: 38px;
+         font-size: large;
+        }
+        .w27{
+            word-spacing: 36px;
+            font-size: large;
+        }
+        .w28,.w29,.w30{
+            word-spacing: 26px;
+            font-size: large;
+        }
+        .julyweek{
+            position: absolute;
+            top:120vh;
+            left:83vh;
+        }
+        .seventhmonth{
+            font-size: larger;          
+        }
+        .day7{
+            background-color: cyan;
+            word-spacing: 8px;
+        }
+         .w31{
+         word-spacing: 34px;
+         font-size: large;
+        }
+        .w32{
+            word-spacing: 28px;
+            font-size: large;
+        }
+        .w33,.w34,.w35{
+            word-spacing: 26px;
+            font-size: large;
+        }
+        .augweek{
+            position: absolute;
+            top:120vh;
+            left:134vh;
+        }
+        .eigthmonth{
+            font-size: larger;          
+        }
+        .day8{
+            background-color: purple;
+            word-spacing: 8px;
+        }
+         .w36{
+         word-spacing: 28px;
+         font-size: large;
+        }
+        .w37{
+            word-spacing: 32px;
+            font-size: large;
+        }
+        .w38,.w39,.w40{
+            word-spacing: 26px;
+            font-size: large;
+        }
+        .sepweek{
+            position: absolute;
+            top:160vh;
+            left:83vh;
+        }
+        .ninthmonth{
+            font-size: larger;          
+        }
+        .day9{
+            background-color: yellow;
+            word-spacing: 8px;
+        }
+         .w41{
+         word-spacing: 36px;
+         font-size: large;
+        }
+        .w42{
+            word-spacing: 35px;
+            font-size: large;
+        }
+        .w43,.w44,.w45,.w46{
+            word-spacing: 28px;
+            font-size: large;
+        }
+        .octweek{
+            position: absolute;
+            top:160vh;
+            left:134vh;
+        }
+        .tenthmonth{
+            font-size: larger;          
+        }
+        .day10{
+            background-color: orangered;
+            word-spacing: 8px;
+        }
+         .w47{
+         word-spacing: 36px;
+         font-size: large;
+        }
+        .w48{
+            word-spacing: 30px;
+            font-size: large;
+        }
+        .w49,.w50,.w51{
+            word-spacing: 26px;
+            font-size: large;
+        }
+        .novweek{
+            position: absolute;
+            top:205vh;
+            left:83vh;
+        }
+        .eleventhmonth{
+            font-size: larger;          
+        }
+        .day11{
+            background-color: hotpink;
+            word-spacing: 8px;
+        }
+         .w52{
+         word-spacing: 45px;
+         font-size: large;
+        }
+        .w53{
+            word-spacing: 34px;
+            font-size: large;
+        }
+        .w54,.w55,.w56{
+            word-spacing: 25px;
+            font-size: large;
+        }
+        .decweek{
+            position: absolute;
+            top:205vh;
+            left:134vh;
+        }
+        .twelethmonth{
+            font-size: larger;          
+        }
+        .day12{
+            background-color: olivedrab;
+            word-spacing: 8px;
+        }
+         .w57{
+         word-spacing: 45px;
+         font-size: large;
+        }
+        .w58{
+            word-spacing: 34px;
+            font-size: large;
+        }
+        .w59,.w60,.w61{
+            word-spacing: 25px;
+            font-size: large;
+        }
+        .w62{
+            word-spacing: 26px;
+            font-size: large;
+        }
+        .year{
+            position: absolute;
+            top: -40vh;
+            left:10vh;
+            font-size: 300px;
+            font-weight: bolder;
+            color:white;
+        }
+        .year1{
+            position: absolute;
+            top:10vh;
+            left:10vh;
+            font-size: 300px;
+            font-weight: bolder;
+            color:white;
+        }
+        .festivals{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left:10vh;
+            top:110vh;
+            font-size: x-large;
+            background-color: aliceblue;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .fest{
+            background-color: seagreen;
+            display: flex;
+            position: absolute;
+            left:10vh;
+            top:100vh;
+            font-size: xx-large;
+        }   
+        .bord{
+            position: relative;
+            top:45vh;
+            left:6vh;
+            width:300px;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <div class="year">
+    <p>20</p></div>
+    <p class="bord" style="border:10px solid white"></p>
+    <div><p class="year1">24</p></div>
+        <h1 class="fest">HOLIDAYS 2024</h1>
+        <div class="festivals">
+        <span>Jan-13-Lahori</span>
+        <span>Jan-14-Makar-Sankranthi</span>
+        <span>Jan-15-Pongal</span>
+        <span>Jan-26-Republic day</span>
+        <span>Feb-14-Vasanth panchami</span>
+        <span>Mar-O8-Maha shivarathri</span>
+        <span>Mar-25-Holi</span>
+        <span>Mar-29-Good Friday</span>
+        <span>Mar-31-Easter day</span>
+        <span>Apr-09-Ugadhi</span>
+        <span>Apr-17-Srirama Navami</span>
+        <span>Jul-17-Moharam</span>
+        <span>Aug-15-Independence day</span>
+        <span>Aug-19-Rakshabandhan</span>
+        <span>Sep-07-Ganesh chathurthi</span>
+        <span>Sep-15-Onam</span>
+        <span>Oct-02-Gandhi-Jayanthi</span>
+        <span>Oct-12-Dusshera</span>
+        <span>Oct-31-Diwali</span>
+        <span>Dec-25-Christmas</span>
+    </div>
+
+    <div class="main">
+        <div class="calender">
+            <div class="janweek">
+           <h1 class="firstmonth">JANUARY</h1>
+           <b class="day1">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w1">1 2 3 4 5 6 7</p>
+            <p class="w2">8 9 10 11 12 13 14</p>
+            <p class="w3"> 15 16 17 18 19 20 21</p>
+            <p class="w4">22 23 24 25 26 27 28</p>
+           <p class="w5">29 30 31</p>
+        </div>
+        <div class="febweek">
+            <h1 class="secondmonth">FEBRUARY</h1>
+           <b class="day2">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w6"> - - - 1 2 3 4</p>
+            <p class="w7"> 5 6 7 8 9 10 11</p>
+            <p class="w8"> 12 13 14 15 16 17 18</p>
+            <p class="w9"> 19 20 21 22 23 24 25</p>
+           <p class="w10"> 26 27 28 29</p>
+        </div>
+        <div class="marweek">
+            <h1 class="thirdmonth">MARCH</h1>
+           <b class="day3">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w11"> - - - -1 2 3 </p>
+            <p class="w12">4 5 6 7 8 9 10 </p>
+            <p class="w13">  11 12 13 14 15 16 17 </p>
+            <p class="w14">18 19 20 21 22 23 24 </p>
+           <p class="w15">25 26 27 28 29 30 31</p>
+        </div>
+        <div class="aprweek">
+            <h1 class="fourthmonth">APRIL</h1>
+           <b class="day4">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w16"> 1 2 3 4 5 6 7</p>
+            <p class="w17">8 9 10 11 12 13 14</p>
+            <p class="w18">15 16 17 18 19 20 21</p>
+            <p class="w19">22 23 24 25 26 27 28</p>
+           <p class="w20">29 30 </p>
+        </div>
+        <div class="mayweek">
+            <h1 class="fifthmonth">MAY</h1>
+           <b class="day5">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w21"> - - 1 2 3 4 5 </p>
+            <p class="w22">  6 7 8 9 10 11 12</p>
+            <p class="w23">  13 14 15 16 17 18 19</p>
+            <p class="w24"> 20 21 22 23 24 25 26 </p>
+           <p class="w25">  27 28 29 30 31</p>
+        </div>
+        <div class="juneweek">
+            <h1 class="sixthmonth">JUNE</h1>
+           <b class="day6">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w26"> - - - - - 1 2  </p>
+            <p class="w27">3 4 5 6 7 8 9  </p>
+            <p class="w28">10 11 12 13 14 15 16</p>
+            <p class="w29"> 17 18 19 20 21 22 23</p>
+           <p class="w30">24 25 26 27 28 29 30 </p>
+        </div>
+        <div class="julyweek">
+            <h1 class="seventhmonth">JULY</h1>
+           <b class="day7">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w31"> 1 2 3 4 5 6 7 </p>
+            <p class="w32">8 9 10 11 12 13 14 </p>
+            <p class="w33"> 15 16 17 18 19 20 21</p>
+            <p class="w34"> 22 23 24 25 26 27 28</p>
+           <p class="w35"> 29 30 31</p>
+        </div>
+        <div class="augweek">
+            <h1 class="eigthmonth">AUGUST</h1>
+           <b class="day8">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w36"> - - - - 1 2 3 4</p>
+            <p class="w37"> 5 6 7 8 9 10 11</p>
+            <p class="w38"> 12 13 14 15 16 17 18</p>
+            <p class="w39"> 19 20 21 22 23 24 25</p>
+           <p class="w40">26 27 28 29 30 31</p>
+        </div>
+        <div class="sepweek">
+            <h1 class="ninthmonth">SEPTEMBER</h1>
+           <b class="day9">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w41"> - - - - - - 1</p>
+            <p class="w42">2 3 4 5 6 7 8</p>
+            <p class="w43">9 10 11 12 13 14 15 </p>
+            <p class="w44">16 17 18 19 20 21 22 </p>
+           <p class="w45">23 24 25 26 27 28 29</p>
+           <p class="w46">30 </p>
+        </div>
+        <div class="octweek">
+            <h1 class="tenthmonth">OCTOBER</h1>
+           <b class="day10">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w47"> - 1 2 3 4 5 6</p>
+            <p class="w48"> 7 8 9 10 11 12 13</p>
+            <p class="w49"> 14 15 16 17 18 19 20 </p>
+            <p class="w50"> 21 22 23 24 25 26 27 </p>
+           <p class="w51"> 28 29 30 31</p>
+        </div>
+        <div class="novweek">
+            <h1 class="eleventhmonth">NOVEMBER</h1>
+           <b class="day11">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w52"> - - - -1 2 3 </p>
+            <p class="w53">4 5 6 7 8 9 10</p>
+            <p class="w54"> 11 12 13 14 15 16 17 </p>
+            <p class="w55"> 18 19 20 21 22 23 24</p>
+           <p class="w56">25 26 27 28 29 30</p>
+        </div>
+        <div class="decweek">
+            <h1 class="twelethmonth">DECEMBER</h1>
+           <b class="day12">MON TUE WED THU FRI SAT SUN</b>
+            <p class="w57"> - - - - - -1</p>
+            <p class="w58">2 3 4 5 6 7 8</p>
+            <p class="w59">9 10 11 12 13 14 15</p>
+            <p class="w60"> 16 17 18 19 20 21 22</p>
+           <p class="w61">23 24 25 26 27 28 29</p>
+           <p class="w62"> 30 31</p>
+        </div>
+    </div>
+  </div> 
+</body>
+</html>
